@@ -23,11 +23,15 @@ function checkGuess() {
         lastResult.style.backgroundColor = "green";
         lowOrHi.textContent = "";
         setGameOver(); // ✅ call here when guessed right
-    } else if (guessCount === 10) {
+    } 
+   
+    else if (guessCount === 10) {
         lastResult.textContent = "!!! GAME OVER !!!";
         lowOrHi.textContent = "";
         setGameOver(); // ✅ call here when guesses run out
-    } else {
+    } 
+    
+    else {
         lastResult.textContent = "Wrong!";
         lastResult.style.backgroundColor = "red";
         if (userGuess > randomNumber) {
@@ -75,5 +79,4 @@ function resetGame() {
     randomNumber = Math.floor(Math.random() * 100) + 1;
 }
 
-// ✅ Add event listener at the bottom
 guessSubmit.addEventListener("click", checkGuess);
