@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Silly story generator</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- <style>
+      body {
+        font-family: helvetica, sans-serif;
+        width: 350px;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      div {
+        padding-bottom: 20px;
+      }
+
+      input[type="text"] {
+        padding: 5px;
+        width: 150px;
+      }
+
+      p {
+        background: #ffc125;
+        color: #5e2612;
+        padding: 10px;
+        visibility: hidden;
+      }
+    </style> -->
+    <style>
+        body {
+            background-image: url(https://preview.redd.it/looking-for-background-scenery-artist-recommendations-v0-qp4hffqnwgbe1.jpeg?width=1600&format=pjpg&auto=webp&s=6aa67661a6055a62e213a2550c687b2a5199dbce);
+            background-attachment: fixed;
+        }
+    </style>
+  </head>
+
+  <body class=" min-h-screen flex gap-4 flex-col items-center">
+    <div class="max-w-lg lg:max-w-sm m-8 sm:m-50 rounded flex flex-col items-center justify-center gap-2 text-white p-5 container scale-100 lg:scale-90">
+    <!-- <div class="bg-slate-400 min-h-screen rounded flex flex-col items-center justify-center gap-2 text-white p-5 container scale-100 lg:scale-90  lg:max-w-md"> -->
+      <!-- <h1 class="text-4xl font-bold text-blue-600">Silly Story Generator</h1> -->
+    <div class="p-5 flex flex-col gap-4">
+      <label for="customname" class="text-4xl">Enter custom name</label>
+      <input id="customname" type="text" placeholder="" class="text-black py-2 px-4 bg-slate-200 w-50 text-2xl rounded-md" />
+    </div>
+    <div class="p-5 flex flex-row gap-4 text-lg">
+      <label for="us">US</label
+      ><input id="us" type="radio" name="ukus" value="us" checked />
+      <label for="uk">UK</label
+      ><input id="uk" type="radio" name="ukus" value="uk" />
+    </div>
+    <div class="p-3 bg-blue-400 rounded-md text-center hover:bg-blue-500">
+      <button class="randomize">Generate random story</button>
+    </div>
+    <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
+    <p class="story text-slate-700 text-bold h-50 rounded-md"></p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
